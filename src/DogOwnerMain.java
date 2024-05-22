@@ -19,13 +19,23 @@ public class DogOwnerMain {
 
     public static void main(String[] args) {
 
+
+
         Dog dog = new Dog("Barra", "vuilnisbak", 12, "teef");
 
-        DogOwner nick = new DogOwner("Nick", "male");
+        DogOwner nick = new DogOwner("Nick", "male", dog);
         nick.setDog(dog);
+        nick.setName("Sammy");
+        nick.increaseDogAgeWithOne();
+
 
         System.out.println(nick.toString());
 
     }
+
+
+
+
+
 
 }
