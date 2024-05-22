@@ -19,13 +19,13 @@ public class DogOwner {
     this.dog = dog;
   }
 
-
   public void increaseDogAgeWithOne() {
-    this.dog.age+= 1;
+    this.dog.ageInYears += 1;
   }
 
   public String toString() {
-    return this.name + " heeft een " + dog.sex + ",deze is " + dog.age + "jaar oud en is van het ras " + dog.species + " en heet " + dog.name;
+    return this.name + " heeft een " + dog.sex + ",deze is " + dog.ageInYears + "jaar oud en is van het ras " + dog.species + " en heet " +
+        dog.name;
   }
 
 }

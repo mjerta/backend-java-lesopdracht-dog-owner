@@ -17,25 +17,18 @@ public class DogOwnerMain {
     Instantieer hieronder de objecten en laat zien dat je code werkt.
      */
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
+    short dogAge = 12;
 
+    Dog dog = new Dog("Barra", "vuilnisbak", dogAge, "teef");
 
+    DogOwner nick = new DogOwner("Nick", "male", dog);
+    nick.setDog(dog);
+    nick.setName("Sammy");
+    nick.increaseDogAgeWithOne();
 
-        Dog dog = new Dog("Barra", "vuilnisbak", 12, "teef");
+    System.out.println(nick.toString());
 
-        DogOwner nick = new DogOwner("Nick", "male", dog);
-        nick.setDog(dog);
-        nick.setName("Sammy");
-        nick.increaseDogAgeWithOne();
-
-
-        System.out.println(nick.toString());
-
-    }
-
-
-
-
-
+  }
 
 }
