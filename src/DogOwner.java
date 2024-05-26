@@ -24,8 +24,8 @@ public class DogOwner {
   }
 
   public String toString() {
-    return this.name + " heeft een " + dog.sex + ",deze is " + dog.ageInYears + "jaar oud en is van het ras " + dog.species + " en heet " +
-        dog.name;
+    return this.name + " heeft een " + dog.sex + ",deze is " + dog.ageInYears + " jaar oud en is van het ras " + dog.species + " en heet " +
+        dog.name + ".";
   }
 
 }
